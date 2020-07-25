@@ -1,9 +1,8 @@
 # ShinyColors Text Viewer   
 TODO add Description
 
-## Usage
-****downlload link not updated yet****  
-Download .exe from [Google Drive](https://drive.google.com/file/d/1lND_-w6qF0oNIjiHKZsyK_rsKcHkYPco/view?usp=sharing)  
+## Usage  
+Download .exe from [Google Drive](https://drive.google.com/file/d/1f-gg_PYvBRchFXwPkJRzIwY509LJQHPt/view?usp=sharing)  
     
 
 ![usage_1](src/usage_1.PNG)
