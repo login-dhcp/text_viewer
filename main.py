@@ -2,7 +2,7 @@ import os
 import sys
 
 import numpy as np
-import pandas as pd
+from pandas import read_csv, isna
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QPushButton, QLineEdit, QInputDialog, QLabel,
     QHBoxLayout, QVBoxLayout, QGridLayout, QErrorMessage
@@ -21,7 +21,7 @@ class App(QWidget):
 
         self.index = 74
         self.idol_index = 0
-        self.csv = pd.read_csv('data/korean.csv')
+        self.csv = read_csv('data/korean.csv')
         self.texts = self.csv.iloc[:, :6]
 
         self.initUI()
@@ -99,7 +99,7 @@ class App(QWidget):
         text_jp = self.texts.iloc[row, 3]
 
         # search for next text
-        while pd.isna(text_jp):
+        while isna(text_jp):
             row = row + 1
             text_jp = self.texts.iloc[row, 4]
             if row >= len(self.texts):
